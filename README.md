@@ -4,6 +4,6 @@ Projeto criado no final do curso de React da Origamid
 
 Para rodar o projeto:
 
-### `npm instal`
+### `npm install`
 
 ### `npm start`
