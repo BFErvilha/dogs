@@ -82,3 +82,18 @@ export function PHOTO_GET(id) {
     },
   };
 }
+
+export function COMMENT_POST(id, body) {
+  return {
+    url: `${API_URL}/api/comment/${id}`,
+    options: {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + window.localStorage.getItem('token'),
+        // O certo é passar por token, esse é apenas para mostrar como é puxando do localStorage
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
